@@ -5,94 +5,499 @@
   <meta charset="utf-8">
   <title>"Sara Imam | Home" </title>
   <meta name="author" content="Sara Imam">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta name="description" content="A website for all things Sara Imam!">
   <meta name = "keywords" content = "Sara Imam, Software Engineer, Data Science, Berkeley, California, Design, Art, Internship, CS, UC Berkeley, UCB">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/d179e4a5e6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
   <header>
-    <p>Sara Imam</p>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href = "about.html">About Me</a></li>
-        <li><a href = "#"><strong>Portfolio</strong></a>
-          <ul>
-            <li><a href = "code.html"><strong>Code</strong></a></li>
-            <li><a href = "creative.html">Creative</a></li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; color: white;">
+      <div class = "container-fluid">
+
+        <a class="navbar-brand" href="index.html">Sara Imam</a>
+
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive">
+          <span class = "navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse" id = "navbarResponsive">
+          <ul class = "navbar-nav">
+            <li class="nav-item active"> <a class = "nav-link" href="index.html">Home</a> </li>
+            <li class="nav-item"> <a class = "nav-link" href="about.html">About</a> </li>
+            <li class="nav-item dropdown">
+              <a class = "nav-link dropdown-toggle" data-toggle = "dropdown" data-target="dropdown_target" href="#">Portfolio<span class = "caret"></span></a>
+              <div class ="dropdown-menu" aria-labelledby ="dropdown_target">
+                <a class = "dropdown-item" href = "code.html">Code</a>
+                <a class = "dropdown-item" href = "creative.html">Creative</a>
+              </div>
+            </li>
+            <li class="nav-item"> <a class = "nav-link" href="resume.html">Resume</a> </li>
           </ul>
-        </li>
-        <li><a href = "resume.html">Resume</a></li>
-      </ul>
+        </div>
+
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li class="nav-item" href="mailto:sara.imam@berkeley.edu" target="_blank">
+            <a class="nav-link"><i class="fas fa-envelope-square"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- Header -->
+    <section id="codeheader">
+      <div class = "container-fluid text-center">
+        <h1>&ltPORTFOLIO: CODE&gt</h1>
+        <h3> My Projects in Java, Python, and HTML. </h3>
+      </div>
+    </section>
 
-    <div class="contactbuttons">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/saraimam/" target="_blank">
-            <img src="./img/linkedin.png" alt="linkedIn">
-          </a>
-        </li>
-        <li>
-          <a href="mailto:sara.imam@berkeley.edu" target="_blank">
-            <img src="./img/email.png" alt="email">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/_sara4change" target="_blank">
-            <img src="./img/twitter.png" alt="twitter">
-          </a>
-        </li>
+
+    <!-- Buttons -->
+    <div class="container-fluid">
+      <ul class="nav nav-pills center-pills" id = "pillbuttons">
+        <li class="active"><a data-toggle="pill" href="#all"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">HOME</button></a></li>
+        <li><a data-toggle="pill" href="#java"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">JAVA</button></a></li>
+        <li><a data-toggle="pill" href="#python"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">PYTHON</button></a></li>
+        <li><a data-toggle="pill" href="#html"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">HTML/CSS/JAVASCRIPT</button></a></li>
+        <li><a data-toggle="pill" href="#ds"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">DATA SCIENCE</button></a></li>
       </ul>
-    </div>
 
-  </header>
+      <div class="tab-content">
+        <div id="all" class="tab-pane fade in active">
+            <!-- Gitlet -->
+            <div class="container-fluid">
+              <div class = "row padding">
+                <div class = col-md-4>
+                  <div class = "card mb-4 box-shadow">
+                    <img class = "card-img-top" src="./img/website.png" alt="website">
+                    <div class = "card-body">
+                      <h4>My Portfolio Website</h4>
+                      <a href="https://github.com/sara-imam/sara-imam.github.io" target="_blank">Project Code</a>
+                      <p> I created my first ever wesbite! Created completely from scratch, utilising CSS, HTML, JavaScript, and bootstrap. I self taught myself everything that I created on this website, and got to put my own personality into it.</p>
+                    </div>
+                  </div>
+                </div>
 
-  <section id="codeheader">
-    <div class = "container">
-      <h1>&ltPORTFOLIO: CODE&gt</h1>
-    </div>
-  </section>
+                <div class = col-md-4>
+                  <div class = "card mb-4 box-shadow">
+                    <img class = "card-img-top" src="./img/maggie.jpg" alt="maggies website">
+                    <div class = "card-body">
+                      <h4>CWP Website </h4>
+                      <p> I am working on the website for Maggie Sokolik's College Writing Program, complete with a online course and online shopping module.</p>
+                    </div>
+                  </div>
+                </div>
 
-  <section id="Java">
-    <div class = "container">
-      <div class = "portfoliobox">
-        <div class = "projectimg" id = "gitletimg">
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/git.png" alt="git">
+                  <div class = "card-body">
+                    <h4>Gitlet</h4>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61b/fa19/materials/proj/proj3/index.html" target="_blank">Full Project Specification</a>
+                    <p> I created a mini version control system modeled after git. It supported the following commands: init, add, commit, rm, log, global-log, find, status, checkout, branch, rm-branch, reset, merge, add-remote, push, pull, and delete-remote. I utilized SHA1 serialization for file tracking. </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Tablut -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/tablut.png" alt="tablut">
+                  <div class = "card-body">
+                    <h4>Tablut</h4>
+                    <a href="http://inst.eecs.berkeley.edu/~cs61b/fa19/materials/proj/proj2/index.html" target="_blank">Full Project Specification</a>
+                    <p> I recreated a board game called "Tablut", based on an ancient Nordic and Celtic strategy board game played on a checkered or latticed gameboard with two armies of uneven numbers. In my iteration, you can either play the game through terminal commands, or through a GUI I built. I also created a complex AI, which was designed to force a win within 4 moves if possible for whichever side it played. </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Enigma -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/enigma.png" alt="enigma">
+                  <div class = "card-body">
+                    <h4>The Enigma Machine</h4>
+                    <a href="http://inst.eecs.berkeley.edu/~cs61b/fa19/materials/proj/proj1/index.html" target="_blank">Full Project Specification</a>
+                    <p> I recreated the Enigma Machine which was used for encryption during WWII. My project takes a .in text file with a message, and encrypts it given a rotor setting, plug board, alphabet, and ring setting (Ringstellung). It outputs to a .out file. The machine can also take in an output, and decrypt the mesage to the given alphabet. The encryption process follows that of the original machine!</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HeartDisease Classifier -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/HeartDisease.jpg" alt="heartdisease">
+                  <div class = "card-body">
+                    <h4>Heart Disease Classifier</h4>
+                    <a href="https://github.com/sara-imam/Data-Science-Society-Projects/tree/master/HeartDisease" target="_blank">Project Code</a>
+                    <p> I created a Heart Disease Classifier that could predict whether you had heart disease or not given a persons age, Resting BP, cholestoral, Maximum heart rate, Excersize vs Resting heart rate, and Normal vs defect heart rate. My data set came from a kaggle data set that I cleaned. For my classifier, I used a K Nearest Classifier and a cross Validation test, with libraries such as numPy and scikit-learn. </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- movie classifier -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/movie.jpg" alt="movies">
+                  <div class = "card-body">
+                    <h4>Movie Classifier</h4>
+                    <p> I created a Movie Disease Classifier that could predict the genre of a movie based on the occurance of 20 different words in the script. My data set came from Berkeley's Data 8 class. For my classifier, I used a K Nearest Classifier with multiple trials of arbriatry k-values. </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cvd case study -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/cvd.jpg" alt="cvd">
+                  <div class = "card-body">
+                    <h4>CardioVascular Case Study</h4>
+                    <p> I created a large scale case study into cause and effect surrounding cardiovascular disease. I looked through multiple data sets from multiple decades, provided by Berkeley's Data 8 class, to create a hypothesis test analyzing if poor diet caused heart disease.  </p>
+                  </div>
+                </div>
+              </div>
+
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/grad.jpg" alt="grad">
+                <div class = "card-body">
+                  <h4>Graduate Admission Statistic Visualizations</h4>
+                  <a href="https://github.com/sara-imam/Data-Science-Society-Projects/blob/master/GraduateAdmissions/Graduate%20Admissions.ipynb" target="_blank">Project Code</a>
+                  <p> I created data visualizations on graduate admission statistics to analyze commons questions about the dataset including: Are GRE and TOEFL scores positively correlated?, Do higher GRE and TOEFL scores increase the chance of getting into a Master’s program?, Does having a higher GPA increase your chance of Admit?, and others. It plays an important role in analyzing what factors affect graduate admissions and what students should focus when applying. </p>
+                </div>
+              </div>
+            </div>
+
+              <!-- Scheme Interpreter -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/scheme.png" alt="scheme">
+                  <div class = "card-body">
+                    <h4>Scheme Interpreter</h4>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/scheme/" target="_blank">Full Project Specification</a>
+                    <p>I created a scheme interpreter which is able to read any scheme input and perform the correct operation, and carry out basic operations. It had a few core functionalities: The evaluator, User defined procedures, and Special Forms. </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ants vs Somebees -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/ants.png" alt="ants">
+                  <div class = "card-body">
+                    <h4>Ants vs SomeBees</h4>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/ants/" target="_blank">Full Project Specification</a>
+                    <p>I created a game called Ants vs SomeBees, which is a turn based game where ants defend their colonies and bees try to attack said colonies. Different type of ants have different characteristics and attack abilities, as do queen bees. </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Maps -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/maps.png" alt="maps">
+                  <div class = "card-body">
+                    <h4>Maps</h4>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/maps/" target="_blank">Full Project Specification</a>
+                    <p>I created a visualization of restaurant ratings using machine learning. It allows users to view resturaunts that match their previous preferences based on location and ratings. It utilises a voronoi diagram.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hog -->
+              <div class = col-md-4>
+                <div class = "card mb-4 box-shadow">
+                  <img class = "card-img-top" src="./img/hog.jpg" alt="hog">
+                  <div class = "card-body">
+                    <h4>Hog</h4>
+                    <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/hog/" target="_blank">Full Project Specification</a>
+                    <p>I created a game called hog which is a turn based game that utilizes die, random chance, and strategy. The goal of the game is to get to 100 total points, where points are the sum of the dice outcomes. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class = "projecttitle">
-          <h1>Gitlet</h1>
-          <a href="https://inst.eecs.berkeley.edu/~cs61b/fa19/materials/proj/proj3/index.html" target="_blank"><h4>Full Project Specification</h4></a>
+
+        <div id="java" class="tab-pane fade">
+
+            <div class = "row padding">
+            <div class = "col-xs-12 col-sm-6 col-md-4">
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/git.png" alt="git">
+                <div class = "card-body">
+                  <h4>Gitlet</h4>
+                  <a href="https://inst.eecs.berkeley.edu/~cs61b/fa19/materials/proj/proj3/index.html" target="_blank">Full Project Specification</a>
+                  <p> I created a mini version control system modeled after git. It supported the following commands: init, add, commit, rm, log, global-log, find, status, checkout, branch, rm-branch, reset, merge, add-remote, push, pull, and delete-remote. I utilized SHA1 serialization for file tracking. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class = "col-xs-12 col-sm-6 col-md-4">
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/tablut.png" alt="tablut">
+                <div class = "card-body">
+                  <h4>Tablut</h4>
+                  <a href="http://inst.eecs.berkeley.edu/~cs61b/fa19/materials/proj/proj2/index.html" target="_blank">Full Project Specification</a>
+                  <p> I recreated a board game called "Tablut", based on an ancient Nordic and Celtic strategy board game played on a checkered or latticed gameboard with two armies of uneven numbers. In my iteration, you can either play the game through terminal commands, or through a GUI I built. I also created a complex AI, which was designed to force a win within 4 moves if possible for whichever side it played. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class = "col-xs-12 col-sm-6 col-md-4">
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/enigma.png" alt="tablut">
+                <div class = "card-body">
+                  <h4>The Enigma Machine</h4>
+                  <a href="http://inst.eecs.berkeley.edu/~cs61b/fa19/materials/proj/proj1/index.html" target="_blank">Full Project Specification</a>
+                  <p> I recreated the Enigma Machine which was used for encryption during WWII. My project takes a .in text file with a message, and encrypts it given a rotor setting, plug board, alphabet, and ring setting (Ringstellung). It outputs to a .out file. The machine can also take in an output, and decrypt the mesage to the given alphabet. The encryption process follows that of the original machine!</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class = "projectabout">
-          <p> I created a mini version control system modeled after git. It supported the following commands: init, add, commit, rm, log, global-log, find, status, checkout, branch, rm-branch, reset, merge, add-remote, push, pull, and delete-remote. I utilized SHA1 serialization for file tracking.
+
+        <div id="python" class="tab-pane fade">
+          <div class = "row padding">
+            <!-- HeartDisease Classifier -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/HeartDisease.jpg" alt="heartdisease">
+                <div class = "card-body">
+                  <h4>Heart Disease Classifier</h4>
+                  <a href="https://github.com/sara-imam/Data-Science-Society-Projects/tree/master/HeartDisease" target="_blank">Project Code</a>
+                  <p> I created a Heart Disease Classifier that could predict whether you had heart disease or not given a persons age, Resting BP, cholestoral, Maximum heart rate, Excersize vs Resting heart rate, and Normal vs defect heart rate. My data set came from a kaggle data set that I cleaned. For my classifier, I used a K Nearest Classifier and a cross Validation test, with libraries such as numPy and scikit-learn. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- movie classifier -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/movie.jpg" alt="movies">
+                <div class = "card-body">
+                  <h4>Movie Classifier</h4>
+                  <p> I created a Movie Disease Classifier that could predict the genre of a movie based on the occurance of 20 different words in the script. My data set came from Berkeley's Data 8 class. For my classifier, I used a K Nearest Classifier with multiple trials of arbriatry k-values. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cvd case study -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/cvd.jpg" alt="cvd">
+                <div class = "card-body">
+                  <h4>CardioVascular Case Study</h4>
+                  <p> I created a large scale case study into cause and effect surrounding cardiovascular disease. I looked through multiple data sets from multiple decades, provided by Berkeley's Data 8 class, to create a hypothesis test analyzing if poor diet caused heart disease.  </p>
+                </div>
+              </div>
+            </div>
+
+          <div class = col-md-4>
+            <div class = "card mb-4 box-shadow">
+              <img class = "card-img-top" src="./img/grad.jpg" alt="grad">
+              <div class = "card-body">
+                <h4>Graduate Admission Statistic Visualizations</h4>
+                <a href="https://github.com/sara-imam/Data-Science-Society-Projects/blob/master/GraduateAdmissions/Graduate%20Admissions.ipynb" target="_blank">Project Code</a>
+                <p> I created data visualizations on graduate admission statistics to analyze commons questions about the dataset including: Are GRE and TOEFL scores positively correlated?, Do higher GRE and TOEFL scores increase the chance of getting into a Master’s program?, Does having a higher GPA increase your chance of Admit?
+  , and others. It plays an important role in analyzing what factors affect graduate admissions and what students should focus when applying. </p>
+              </div>
+            </div>
+          </div>
+
+            <!-- Scheme Interpreter -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/scheme.png" alt="scheme">
+                <div class = "card-body">
+                  <h4>Scheme Interpreter</h4>
+                  <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/scheme/" target="_blank">Full Project Specification</a>
+                  <p>I created a scheme interpreter which is able to read any scheme input and perform the correct operation, and carry out basic operations. It had a few core functionalities: The evaluator, User defined procedures, and Special Forms. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ants vs Somebees -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/ants.png" alt="ants">
+                <div class = "card-body">
+                  <h4>Ants vs SomeBees</h4>
+                  <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/ants/" target="_blank">Full Project Specification</a>
+                  <p>I created a game called Ants vs SomeBees, which is a turn based game where ants defend their colonies and bees try to attack said colonies. Different type of ants have different characteristics and attack abilities, as do queen bees. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Maps -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/maps.png" alt="maps">
+                <div class = "card-body">
+                  <h4>Maps</h4>
+                <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/maps/" target="_blank">Full Project Specification</a>
+                <p>I created a visualization of restaurant ratings using machine learning. It allows users to view resturaunts that match their previous preferences based on location and ratings. It utilises a voronoi diagram.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hog -->
+          <div class = col-md-4>
+            <div class = "card mb-4 box-shadow">
+              <img class = "card-img-top" src="./img/hog.jpg" alt="hog">
+              <div class = "card-body">
+                <h4>Hog</h4>
+                <a href="https://inst.eecs.berkeley.edu/~cs61a/fa18/proj/hog/" target="_blank">Full Project Specification</a>
+                <p>I created a game called hog which is a turn based game that utilizes die, random chance, and strategy. The goal of the game is to get to 100 total points, where points are the sum of the dice outcomes. </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        </div>
+
+        <div id="html" class="tab-pane fade">
+          <div class = "row padding">
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/website.png" alt="website">
+                <div class = "card-body">
+                  <h4>My Portfolio Website</h4>
+                  <a href="https://github.com/sara-imam/sara-imam.github.io" target="_blank">Project Code</a>
+                  <p> I created my first ever wesbite! Created completely from scratch, utilising CSS, HTML, JavaScript, and bootstrap. I self taught myself everything that I created on this website, and got to put my own personality into it.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/maggie.jpg" alt="maggies website">
+                <div class = "card-body">
+                  <h4>CWP Website </h4>
+                  <p> I am working on the website for Maggie Sokolik's College Writing Program, complete with a online course and online shopping module.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="ds" class="tab-pane fade">
+          <div class = "row padding">
+            <!-- HeartDisease Classifier -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/HeartDisease.jpg" alt="heartdisease">
+                <div class = "card-body">
+                  <h4>Heart Disease Classifier</h4>
+                  <a href="https://github.com/sara-imam/Data-Science-Society-Projects/tree/master/HeartDisease" target="_blank">Project Code</a>
+                  <p> I created a Heart Disease Classifier that could predict whether you had heart disease or not given a persons age, Resting BP, cholestoral, Maximum heart rate, Excersize vs Resting heart rate, and Normal vs defect heart rate. My data set came from a kaggle data set that I cleaned. For my classifier, I used a K Nearest Classifier and a cross Validation test, with libraries such as numPy and scikit-learn. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- movie classifier -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/movie.jpg" alt="movies">
+                <div class = "card-body">
+                  <h4>Movie Classifier</h4>
+                  <p> I created a Movie Disease Classifier that could predict the genre of a movie based on the occurance of 20 different words in the script. My data set came from Berkeley's Data 8 class. For my classifier, I used a K Nearest Classifier with multiple trials of arbriatry k-values. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cvd case study -->
+            <div class = col-md-4>
+              <div class = "card mb-4 box-shadow">
+                <img class = "card-img-top" src="./img/cvd.jpg" alt="cvd">
+                <div class = "card-body">
+                  <h4>CardioVascular Case Study</h4>
+                  <p> I created a large scale case study into cause and effect surrounding cardiovascular disease. I looked through multiple data sets from multiple decades, provided by Berkeley's Data 8 class, to create a hypothesis test analyzing if poor diet caused heart disease.  </p>
+                </div>
+              </div>
+            </div>
+
+          <div class = col-md-4>
+            <div class = "card mb-4 box-shadow">
+              <img class = "card-img-top" src="./img/grad.jpg" alt="grad">
+              <div class = "card-body">
+                <h4>Graduate Admission Statistic Visualizations</h4>
+                <a href="https://github.com/sara-imam/Data-Science-Society-Projects/blob/master/GraduateAdmissions/Graduate%20Admissions.ipynb" target="_blank">Project Code</a>
+                <p> I created data visualizations on graduate admission statistics to analyze commons questions about the dataset including: Are GRE and TOEFL scores positively correlated?, Do higher GRE and TOEFL scores increase the chance of getting into a Master’s program?, Does having a higher GPA increase your chance of Admit?, and others. It plays an important role in analyzing what factors affect graduate admissions and what students should focus when applying. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
-  <hr>
 
-  <section id="Python">
-    <div class = "container">
-    </div>
-  </section>
-  <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid padding">
+        <div class = "row text-center">
+          <div class = "col-md-6">
+            <hr class = "light">
+            <p>Sara Imam</p>
+            <hr class  ="light">
+            <div class = "footerlist">
+            <a href="https://www.linkedin.com/in/saraimam/">Linkedin</a>
+            </div>
+            <div class = "footerlist">
+            <a href="mailto:sara.imam@berkeley.edu">Email</a>
+            </div>
+            <div class = "footerlist">
+            <a href="https://twitter.com/_sara4change">Twitter</a>
+            </div>
+          </div>
 
+          <div class = "col-md-6">
+            <hr class = "light">
+            <p>Navigation</p>
+            <hr class = "light">
+            <div class = "footerlist">
+            <a href="index.html">Home</a>
+            </div>
+            <div class = "footerlist">
+            <a href="about.html">About</a>
+            </div>
+            <div class = "footerlist">
+            <a href="code.html">Code Portfolio</a>
+            </div>
+            <div class = "footerlist">
+            <a href="creative.html">Creative Portfolio</a>
+            </div>
+            <div class = "footerlist">
+            <a href="resume.html">Resume</a>
+            </div>
 
-  <section id="HTML">
-    <div class = "container">
-    </div>
-  </section>
-  <hr>
-
-
-  <footer>
-    <p>Sara Imam, Copyright &copy; 2020</p>
-  </footer>
+          </div>
+          <div class = "col-12">
+            <hr class = "light-100">
+            <p>&copy; Sara Imam</p>
+        </div>
+      </div>
+    </footer>
 
 </body>
 

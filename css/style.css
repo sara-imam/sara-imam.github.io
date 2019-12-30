@@ -1,305 +1,151 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: arial, sans-serif;
-  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-/* Naviagtion Menu/Header */
-header {
-  display: flex;
-  justify-content: space-between;
+/* Navigation */
+.navbar {
   align-items: center;
-  background-color: black;
-  width: 100%
-  height: 60px;
 }
 
-header p {
-  font-family: arial;
-  color: #fff;
-  font-size: 24px;
-  padding: 0px 10px;
+.navbar-nav li {
+  padding-right: 20px;
 }
 
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  position: relative;
-  display: inline-block;
-}
-
-nav ul li a {
-  display: block;
-  font-family: arial;
-  color: #fff;
-  font-size: 14px;
-  padding: 10px 14px;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: #7A7A7A;
-}
-
-nav ul li ul {
-  display: none;
-  position: absolute;
-  background-color: #000000;
-  padding: 0px;
-  border-radius: 0px 0px 4px 4px;
-}
-
-nav ul li:hover ul {
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-nav ul li ul li {
-  width: 80px;
-  border-radius: 4px;
-}
 
-nav ul li ul li a {
-  padding: 8px 14px;
-}
-
-nav ul li ul li a:hover {
-  background-color: #f3f3f3;
-}
-
-.contactbuttons ul {
-  list-style: none;
-}
-
-.contactbuttons ul li {
-  position: relative;
-  display: inline-block;
-}
-
-.contactbuttons ul li a {
-  display: block;
-  padding: 10px 14px;
-  text-decoration: none;
-}
-
-.contactbuttons ul li a img {
-  max-height: 30px;
-  width: auto;
-}
-
-.contactbuttons ul li a img:hover {
-  opacity: 0.5;
-}
-
-/* Global */
-.container {
-  width: 90%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  overflow: hidden;
-}
-
-.portfoliobox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  border:2px solid black;
-  max-width: 50%;
-  /* grid-auto-columns: minmax(100px, auto); */
-}
-
-.projectimg {
-  grid-row: 1/3;
-  grid-column: 1/2;
-}
-
-.projecttitle {
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-
-/* .projectcode {
-  grid-row: 2/3;
-  grid-column: 2/3;
-} */
-
-.projectabout {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
-/* Showcase */
-#showcase{
-  min-height: 500px;
-  background:url('../img/saramain.jpg') no-repeat -100px;
-  background-position: center;
-  color: #000;
-}
-
-#showcase .yourall {
-  display: inline-block;
-  float: left;
-  margin-top: 100px;
-  font-size: 70px;
-  margin-left: 0px;
-}
-
-#showcase .inone {
-  display: inline-block;
-  float: right;
-  margin-top: 100px;
-  font-size: 70px;
-  margin-right: 150px;
-}
-
-/* education */
-#education{
-  align-items: center;
-  margin-top: 20px
-}
-
-#education .box{
-  float: left;
-  width: 20%;
-  padding: 10px;
-  text-align: center;
-}
-
-#education .box img{
-  width: 90px;
-}
-
-
-/* recent */
-/* #MostRecent{
-  min-height: 400;
-  margin-top: 50px;
-  text-align: center;
-  background-color: #f3f3f3;
-}
-
-
-#MostRecent .box2{
-  float: left;
-  width: 30%;
-  padding: 10px;
-  text-align: center;
-  outline-color: black;
-  outline-width: 10px;
-} */
-
-/* footer */
+/* Footer */
 footer {
-  padding: 20px;
-  margin-top: 20px;
-  color: #fff;
+  padding-top: 1rem;
   background-color: black;
-  text-align: center;
+  color: white;
 }
 
-
-
-/* Header of About me Page */
-#aboutmemain {
-  align-items: center;
+hr.light {
+  border-top: 1px solid #fff;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
 }
 
-#aboutmemain .aboutimage {
-  display: inline-block;
-  float: right;
-  /* border-radius: 50%; */
-  height: 500px;
-  width: auto;
-  margin-right: 20%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+hr.light-100 {
+  border-top: 1px solid #fff;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
 }
 
-#aboutmemain aside {
-  margin-top: 5%;
-  float: left;
-  width: 30%;
-  height: auto;
-  margin-left: 10%;
+.footerlist a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerlist a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+/* Banner */
+.bannerimg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------HOME SECTION--------------- */
+/* Three column section */
+#threecolumn {
+  margin-top: 30px;
+}
+
+.fa-school {
+  color:#E6B8E7;
+  font-size: 4rem;
+  margin: 1rm;
+}
+
+.fa-award {
+  color: #8CA9EF;
+  font-size: 4rem;
+  margin: 1rm;
+}
+
+.fa-graduation-cap {
+  color: #37ECFC;
+  font-size: 4rem;
+  margin: 1rm;
+}
+
+/* --------------------------------ABOUT SECTION------------------------------- */
+.aboutheader {
+  margin-top: 30px;
+}
+
+.aboutimage {
+  max-height: 400px;
+}
+
+#nerighbourhoodnerd {
   background: url('../img/watercolor.png')  no-repeat;
-  background-size: 70%;
-  background-position: -50px -10px;
+  background-size: 50%;
+  margin-right: 0px;
+  margin-top: 30px;
 }
 
-#aboutmemain aside h1 {
-  align-items: left;
+#nerighbourhoodnerd h1 {
+  text-align: right;
   font-size: 80px;
-
 }
 
-#aboutmemain aside h3 {
-  margin-top: 1%;
+#nerighbourhoodnerd h3 {
+  text-align: right;
+  font-size: 20px;
 }
 
 
-/* My Hobbies section */
-#hobbies {
-  align-items: center;
-  min-height: 300px;
-}
-
-#hobbies .hobbiesaside{
-  margin-top: 20px;
-  float: right;
-  margin-right: 30%;
-  border:2px solid black;
-}
-
-#hobbies .hobbiesaside h1{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#hobbies .hobbiesaside ul{
-  text-align: center;
+#myhobbies ul li {
   list-style: none;
 }
 
-#hobbies .funfactsaside{
-  margin-top: 20px;
-  float: left;
-  margin-left: 30%;
-  border:2px solid black;
-}
-
-#hobbies .funfactsaside h1{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#hobbies .funfactsaside ul{
-  text-align: center;
+#funfacts ul li {
   list-style: none;
 }
 
-/* My funfacts section */
-#funfacts {
-  align-items: center;
+@media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
+
+/* --------------Code part----------------------------- */
+.center-pills {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
 
-#funfacts h1{
-  float: right;
+#pillbuttons li {
+  margin: 10px;
 }
 
-#funfacts ul{
-  float: left;
-}
 
-/* Styling for Coding Portfolio Boxes */
-#gitletimg {
-  background: url('../img/git.png')  no-repeat;
-  background-size: contain;
-  padding: 1px;
+
+/* --------------------------------Media Queries------------------------------ */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  .nav-flex-icons {
+    display: none;
+  }
+
+}
+@media (max-width: 576px) {
+
 }

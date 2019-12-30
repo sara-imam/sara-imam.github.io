@@ -5,108 +5,138 @@
   <meta charset="utf-8">
   <title>"Sara Imam | Home" </title>
   <meta name="author" content="Sara Imam">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta name="description" content="A website for all things Sara Imam!">
   <meta name = "keywords" content = "Sara Imam, Software Engineer, Data Science, Berkeley, California, Design, Art, Internship, CS, UC Berkeley, UCB">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/d179e4a5e6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <p>Sara Imam</p>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; color: white;">
+    <div class = "container-fluid">
 
-    <nav>
-      <ul>
-        <li><a href="index.html"><strong>Home</strong></a></li>
-        <li><a href = "about.html">About Me</a></li>
-        <li><a href = "#">Portfolio</a>
-          <ul>
-            <li><a href = "code.html">Code</a></li>
-            <li><a href = "creative.html">Creative</a></li>
-          </ul>
-        </li>
-        <li><a href = "resume.html">Resume</a></li>
-      </ul>
-    </nav>
+      <a class="navbar-brand" href="index.html">Sara Imam</a>
 
+      <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive">
+        <span class = "navbar-toggler-icon"></span>
+      </button>
+      <div class = "collapse navbar-collapse" id = "navbarResponsive">
+        <ul class = "navbar-nav">
+          <li class="nav-item active"> <a class = "nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class = "nav-link" href="about.html">About</a> </li>
+          <li class="nav-item dropdown">
+            <a class = "nav-link dropdown-toggle" data-toggle = "dropdown" data-target="dropdown_target" href="#">Portfolio<span class = "caret"></span></a>
+            <div class ="dropdown-menu" aria-labelledby ="dropdown_target">
+              <a class = "dropdown-item" href = "code.html">Code</a>
+              <a class = "dropdown-item" href = "creative.html">Creative</a>
+            </div>
+          </li>
+          <li class="nav-item"> <a class = "nav-link" href="resume.html">Resume</a> </li>
+        </ul>
+      </div>
 
-    <div class="contactbuttons">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/saraimam/" target="_blank">
-            <img src="./img/linkedin.png" alt="linkedIn">
-          </a>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
         </li>
-        <li>
-          <a href="mailto:sara.imam@berkeley.edu" target="_blank">
-            <img src="./img/email.png" alt="email">
-          </a>
+        <li class="nav-item" href="mailto:sara.imam@berkeley.edu" target="_blank">
+          <a class="nav-link"><i class="fas fa-envelope-square"></i></a>
         </li>
-        <li>
-          <a href="https://twitter.com/_sara4change" target="_blank">
-            <img src="./img/twitter.png" alt="twitter">
-          </a>
+        <li class="nav-item">
+          <a class="nav-link"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
         </li>
       </ul>
     </div>
+  </nav>
 
-  </header>
-
-  <section id="showcase">
-    <div class = "container">
-      <h1 class = "yourall">YOUR ALL</h1>
-      <h1 class = "inone">IN ONE.</h1>
-    </div>
-  </section>
-  <hr>
-
-  <section id="education">
-    <div class = "container">
-      <div class = "box">
-        <img src = "./img/school.png">
-        <h3>SCHOOL</h3>
-        <h4>UC Berkeley</h4>
-      </div>
-      <div class = "box">
-        <img src = "./img/gpa.png">
-        <h3>GPA</h3>
-        <h4>3.8</h4>
-      </div>
-      <div class = "box">
-        <img src = "./img/major.png">
-        <h3>MAJOR</h3>
-        <h4>Applied Math, Data Science</h4>
-      </div>
-      <div class = "box">
-        <img src = "./img/major.png">
-        <h3>MINOR</h3>
-        <h4>Computer Science</h4>
-      </div>
+  <!-- Your all in one section -->
+  <section class = "banner">
+    <div class = "container-fluid">
+      <img class = "bannerimg" src="./img/saramain.jpg" alt="My Face">
     </div>
   </section>
 
-  <!-- <section id="MostRecent">
-    <div class = "container">
-      <h1>Most Recent Work</h1>
-      <div class = "box2">
-        <h3>PROJ1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-      </div>
-      <div class = "box2">
-        <h3>PROJ2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-      </div>
-      <div class = "box2">
-        <h3>PROJ3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+  <!-- Three column section -->
+  <section id = "threecolumn">
+    <div class = "container-fluid padding">
+      <div class = "row text-center padding">
+
+        <div class = "col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-school"></i>
+          <h3>SCHOOL</h3>
+          <p>University of California, Berkeley</p>
+        </div>
+
+        <div class = "col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-award"></i>
+          <h3>GPA</h3>
+          <p>3.8</p>
+        </div>
+
+        <div class = "col-md-4" >
+          <i class="fas fa-graduation-cap"></i>
+          <h3>MAJOR/MINOR</h3>
+          <p>Majoring in Applied Math with a focus in CS, Data Science with a focus on Business, and Minor in CS.</p>
+        </div>
+
       </div>
     </div>
-  </section> -->
+  </section>
 
+
+  <!-- Footer -->
   <footer>
-    <p>Sara Imam, Copyright &copy; 2020</p>
+    <div class="container-fluid padding">
+      <div class = "row text-center">
+        <div class = "col-md-6">
+          <hr class = "light">
+          <p>Sara Imam</p>
+          <hr class  ="light">
+          <div class = "footerlist">
+          <a href="https://www.linkedin.com/in/saraimam/">Linkedin</a>
+          </div>
+          <div class = "footerlist">
+          <a href="mailto:sara.imam@berkeley.edu">Email</a>
+          </div>
+          <div class = "footerlist">
+          <a href="https://twitter.com/_sara4change">Twitter</a>
+          </div>
+        </div>
 
+        <div class = "col-md-6">
+          <hr class = "light">
+          <p>Navigation</p>
+          <hr class = "light">
+          <div class = "footerlist">
+          <a href="index.html">Home</a>
+          </div>
+          <div class = "footerlist">
+          <a href="about.html">About</a>
+          </div>
+          <div class = "footerlist">
+          <a href="code.html">Code Portfolio</a>
+          </div>
+          <div class = "footerlist">
+          <a href="creative.html">Creative Portfolio</a>
+          </div>
+          <div class = "footerlist">
+          <a href="resume.html">Resume</a>
+          </div>
+
+        </div>
+        <div class = "col-12">
+          <hr class = "light-100">
+          <p>&copy; Sara Imam</p>
+      </div>
+    </div>
   </footer>
 
 </body>
