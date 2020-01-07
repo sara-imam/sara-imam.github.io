@@ -53,14 +53,17 @@ hr.light-100 {
   color: grey;
 }
 
+/* ----------------------HOME SECTION--------------- */
+
 /* Banner */
 .bannerimg {
   width: 100%;
   height: 100%;
 }
 
-/* ----------------------HOME SECTION--------------- */
-
+.bannerimgsmall {
+  display: none;
+}
 
 /* Three column section */
 #threecolumn {
@@ -88,6 +91,42 @@ hr.light-100 {
   font-size: 4rem;
   margin: 1rm;
 }
+
+@media (max-width: 576px) {
+  .bannerimg {
+    display: none;
+  }
+  .bannerimgsmall {
+    display:block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fa-school {
+    color:#E6B8E7;
+    font-size: 2rem;
+    margin: 1rm;
+  }
+
+  .fa-award {
+    color: #8CA9EF;
+    font-size: 2rem;
+    margin: 1rm;
+  }
+
+  .fa-graduation-cap {
+    color: #37ECFC;
+    font-size: 2rem;
+    margin: 1rm;
+  }
+
+  #threecolumnheader {
+    font-size: 90%;
+  }
+
+
+}
+
 
 /* --------------------------------ABOUT SECTION------------------------------- */
 .aboutheader {
