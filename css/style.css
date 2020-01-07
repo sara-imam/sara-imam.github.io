@@ -17,6 +17,10 @@ body {
   display: block;
 }
 
+.contactmebuttons i {
+  font-size: 25px;
+}
+
 
 /* Footer */
 footer {
@@ -56,9 +60,15 @@ hr.light-100 {
 }
 
 /* ----------------------HOME SECTION--------------- */
+
+
 /* Three column section */
 #threecolumn {
   margin-top: 30px;
+}
+
+#threecolumn div div div h3 {
+  margin-top: 10px;
 }
 
 .fa-school {
@@ -89,15 +99,20 @@ hr.light-100 {
 }
 
 #nerighbourhoodnerd {
+  height: 400px;
+  width: 400px;
+}
+
+.contents {
+  margin-top: 15%;
   background: url('../img/watercolor.png')  no-repeat;
   background-size: 50%;
-  margin-right: 0px;
-  margin-top: 30px;
+  background-position: top left;
 }
 
 #nerighbourhoodnerd h1 {
   text-align: right;
-  font-size: 80px;
+  font-size: 50px;
 }
 
 #nerighbourhoodnerd h3 {
@@ -134,6 +149,15 @@ border-radius: 2px; }
   margin: 10px;
 }
 
+#codeheader div {
+  margin-top: 30px;
+}
+
+.rainbowline {
+  background: linear-gradient(to right, rgb(55,236,252), rgb(140,169,239), rgb(230,184,231));
+  height: 3px;
+  width: 50%;
+}
 
 /* ----------------------------------Creative Part---------------------------------- */
 .row {
@@ -172,6 +196,92 @@ border-radius: 2px; }
 }
 
 
+/* -----------------------------------Resume------------------------------------------------------ */
+
+.rainbowlong {
+  background: linear-gradient(to right, rgb(55,236,252), rgb(140,169,239), rgb(230,184,231));
+  height: .5px;
+  margin-top: 20x;
+}
+
+.custombullet{
+   list-style: none;
+}
+
+.graph-cont{
+  width: calc(100% - 40px);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bar{
+  height: 30px;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.bar::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  top: 0;
+  z-index: -2;
+  background: #ecf0f1;
+}
+.bar::after{
+  content: '';
+  background: linear-gradient(to right, rgb(55,236,252), rgb(140,169,239), rgb(230,184,231));
+  height: 30px;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  -webkit-animation: bar-before 1 1.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bar1::after{
+  max-width: 90%;
+}
+.bar2::after{
+  max-width: 90%;
+}
+.bar3::after{
+  max-width: 100%;
+}
+.bar4::after{
+  max-width: 100%;
+}
+
+.bar5::after{
+  max-width: 60%;
+}
+
+.bar6::after{
+  max-width: 40%;
+}
+
+.bar7::after{
+  max-width: 30%;
+}
+
+
+@-webkit-keyframes bar-before{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
+}
 
 /* --------------------------------Media Queries------------------------------ */
 @media (max-width: 992px) {

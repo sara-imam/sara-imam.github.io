@@ -3,25 +3,35 @@
 
 <head>
   <meta charset="utf-8">
-  <title>"Sara Imam | Home" </title>
+  <title>"Sara Imam | About" </title>
   <meta name="author" content="Sara Imam">
   <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta name="description" content="A website for all things Sara Imam!">
   <meta name = "keywords" content = "Sara Imam, Software Engineer, Data Science, Berkeley, California, Design, Art, Internship, CS, UC Berkeley, UCB">
 
+  <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+  <!-- STYLE -->
   <script src="https://kit.fontawesome.com/d179e4a5e6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ANIMATION -->
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/wow.min.js"></script>
+                <script>
+                new WOW().init();
+                </script>
+
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; color: white;">
+  <nav class="navbar navbar-expand-md navbar-dark wow slideInDown" style="background-color: black; color: white;">
     <div class = "container-fluid">
 
       <a class="navbar-brand" href="index.html">Sara Imam</a>
@@ -31,8 +41,8 @@
       </button>
       <div class = "collapse navbar-collapse" id = "navbarResponsive">
         <ul class = "navbar-nav">
-          <li class="nav-item active"> <a class = "nav-link" href="index.html">Home</a> </li>
-          <li class="nav-item"> <a class = "nav-link" href="about.html">About</a> </li>
+          <li class="nav-item"> <a class = "nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item active"> <a class = "nav-link" href="about.html">About</a> </li>
           <li class="nav-item dropdown">
             <a class = "nav-link dropdown-toggle" data-toggle = "dropdown" data-target="dropdown_target" href="#">Portfolio<span class = "caret"></span></a>
             <div class ="dropdown-menu" aria-labelledby ="dropdown_target">
@@ -46,13 +56,13 @@
 
       <ul class="navbar-nav nav-flex-icons">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+          <a class="nav-link contactmebuttons" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
         </li>
         <li class="nav-item" href="mailto:sara.imam@berkeley.edu" target="_blank">
-          <a class="nav-link"><i class="fas fa-envelope-square"></i></a>
+          <a class="nav-link contactmebuttons"><i class="fas fa-envelope-square"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a class="nav-link contactmebuttons"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
         </li>
       </ul>
     </div>
@@ -60,25 +70,27 @@
 
   <!-- Main Header -->
   <section class = "aboutheader">
-    <div class = "container-fluid padding">
-      <div class="row padding">
+    <div class = "container-fluid">
+      <div class="row justify-content-center">
 
-          <div class="col-xs-12 col-sm-12 col-md-6" id = "nerighbourhoodnerd">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow slideInLeft" id = "nerighbourhoodnerd">
+            <div class = "contents">
             <h1>Your Friendly Neighbourhood Nerd.</h1>
             <h3> When I'm not burried in code, actively learning, or working, you can find me creating music, reading, drinking boba... and sleeping!</h3>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow slideInRight">
             <img class = "aboutimage" src="./img/aboutface.JPG" alt="my face">
           </div>
 
       </div>
     </div>
   </section>
-  <hr>
+  <hr class = "rainbowlong wow fadeInh">
 
 <!-- Hobbies and Fun Facts -->
-<section class = "aboutheader">
+<section class = "aboutheader wow fadeIn">
   <div class = "container-fluid padding">
     <div class="row text-center padding">
 
@@ -114,10 +126,10 @@
 </section>
 
 <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2 wow fadeIn" data-ride="carousel">
 
   <!--Controls-->
-  <div class="controls-top text-center">
+  <div class="controls-top text-center wow fadeIn">
     <a class="black-text" href="#multi-item-example" data-slide="prev"  style="color:black;"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
     <a class="black-text" href="#multi-item-example" data-slide="next" style="color:black;"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
   </div>
@@ -131,28 +143,28 @@
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg"
+          <img class="img-fluid" src="./img/sara1.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg"
+          <img class="img-fluid" src="./img/sara2.jpeg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(42).jpg"
+          <img class="img-fluid" src="./img/sara3.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(8).jpg"
+          <img class="img-fluid" src="./img/sara4.jpg"
             alt="Card image cap">
         </div>
       </div>
@@ -165,28 +177,28 @@
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+          <img class="img-fluid" src="./img/sara5.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg"
+          <img class="img-fluid" src="./img/sara6.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg"
+          <img class="img-fluid" src="./img/sara7.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(26).jpg"
+          <img class="img-fluid" src="./img/sara8.jpeg"
             alt="Card image cap">
         </div>
       </div>
@@ -199,28 +211,28 @@
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(64).jpg"
+          <img class="img-fluid" src="./img/sara9.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(51).jpg"
+          <img class="img-fluid" src="./img/sara10.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(59).jpg"
+          <img class="img-fluid" src="./img/sara11.jpg"
             alt="Card image cap">
         </div>
       </div>
 
       <div class="col-md-3 mb-3">
         <div class="card">
-          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(63).jpg"
+          <img class="img-fluid" src="./img/sara12.jpg"
             alt="Card image cap">
         </div>
       </div>
@@ -236,7 +248,7 @@
 
 
 <!-- Footer -->
-<footer>
+<footer class = "wow slideInUp">
   <div class="container-fluid padding">
     <div class = "row text-center">
       <div class = "col-md-6">
@@ -244,13 +256,13 @@
         <p>Sara Imam</p>
         <hr class  ="light">
         <div class = "footerlist">
-        <a href="https://www.linkedin.com/in/saraimam/">Linkedin</a>
+        <a href="https://www.linkedin.com/in/saraimam/" target="_blank">Linkedin</a>
         </div>
         <div class = "footerlist">
-        <a href="mailto:sara.imam@berkeley.edu">Email</a>
+        <a href="mailto:sara.imam@berkeley.edu" target="_blank">Email</a>
         </div>
         <div class = "footerlist">
-        <a href="https://twitter.com/_sara4change">Twitter</a>
+        <a href="https://twitter.com/_sara4change" target="_blank">Twitter</a>
         </div>
       </div>
 

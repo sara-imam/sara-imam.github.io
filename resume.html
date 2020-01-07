@@ -2,26 +2,37 @@
 <html>
 
 <head>
+  <!-- BASIC -->
   <meta charset="utf-8">
-  <title>"Sara Imam | Home" </title>
+  <title>"Sara Imam | Resume" </title>
   <meta name="author" content="Sara Imam">
   <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta name="description" content="A website for all things Sara Imam!">
   <meta name = "keywords" content = "Sara Imam, Software Engineer, Data Science, Berkeley, California, Design, Art, Internship, CS, UC Berkeley, UCB">
 
+  <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+  <!-- STYLE -->
   <script src="https://kit.fontawesome.com/d179e4a5e6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ANIMATION -->
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/wow.min.js"></script>
+                <script>
+                new WOW().init();
+                </script>
+
 
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; color: white;">
+  <nav class="navbar navbar-expand-md navbar-dark wow slideInDown" style="background-color: black; color: white;">
     <div class = "container-fluid">
 
       <a class="navbar-brand" href="index.html">Sara Imam</a>
@@ -31,7 +42,7 @@
       </button>
       <div class = "collapse navbar-collapse" id = "navbarResponsive">
         <ul class = "navbar-nav">
-          <li class="nav-item active"> <a class = "nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class = "nav-link" href="index.html">Home</a> </li>
           <li class="nav-item"> <a class = "nav-link" href="about.html">About</a> </li>
           <li class="nav-item dropdown">
             <a class = "nav-link dropdown-toggle" data-toggle = "dropdown" data-target="dropdown_target" href="#">Portfolio<span class = "caret"></span></a>
@@ -40,34 +51,344 @@
               <a class = "dropdown-item" href = "creative.html">Creative</a>
             </div>
           </li>
-          <li class="nav-item"> <a class = "nav-link" href="resume.html">Resume</a> </li>
+          <li class="nav-item active"> <a class = "nav-link" href="resume.html">Resume</a> </li>
         </ul>
       </div>
 
       <ul class="navbar-nav nav-flex-icons">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+          <a class="nav-link contactmebuttons" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
         </li>
         <li class="nav-item" href="mailto:sara.imam@berkeley.edu" target="_blank">
-          <a class="nav-link"><i class="fas fa-envelope-square"></i></a>
+          <a class="nav-link contactmebuttons"><i class="fas fa-envelope-square"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a class="nav-link contactmebuttons"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Header -->
-  <section id="codeheader">
+  <section id="codeheader" class = "wow fadeIn">
     <div class = "container-fluid text-center">
-      <h3> UNDER CONSTRUCTION! </h3>
+      <h1><a href = "img/baseresume.pdf" target = "_blank">Sara Imam</a></h1>
+      <h3> Student at UC Berkeley. </h3>
+      <a href="https://www.linkedin.com/in/saraimam/" target="_blank"><button type="button" class="btn btn-outline-dark">LinkedIn</button></a>
+      <a href="mailto:sara.imam@berkeley.edu" target="_blank"><button type="button" class="btn btn-outline-dark">Email</button></a>
+      <a href="https://twitter.com/_sara4change" target="_blank"><button type="button" class="btn btn-outline-dark">Twitter</button></a>
     </div>
   </section>
+  <hr class ="rainbowline wow fadeIn">
 
+  <!-- Education  -->
+  <section id="education" class= "wow fadeIn">
+    <div class = "container-fluid">
+
+      <div class = "text-center">
+        <h1>Education</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="card mx-auto wow fadeIn" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">University of California, Berkeley</h5>
+            <h6 class="card-subtitle mb-2 text-muted">2018-2022</h6>
+            <p class="card-text">Bachelors in Applied Math with a focus in Computer Science, Data Science with a focus in Business, Minor in Computer Science.</p>
+          </div>
+        </div>
+
+        <div class="card mx-auto wow fadeIn" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Marjory Stoneman Douglas High</h5>
+            <h6 class="card-subtitle mb-2 text-muted">2016-2018</h6>
+            <p class="card-text"> Recieved a HighSchool Diploma. Completed Multiple AP Courses.</p>
+          </div>
+        </div>
+
+        <div class="card mx-auto wow fadeIn" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Glenforest Secondary School</h5>
+            <h6 class="card-subtitle mb-2 text-muted">2014-2016</h6>
+            <p class="card-text">Completed the Pre-IB diploma.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <hr class = "rainbowlong wow fadeIn">
+
+  <!-- Job Experiences -->
+  <section id="jobexperience">
+    <div class = "container-fluid justify-content-center">
+
+      <div class = "text-center">
+        <h1 class = "wow fadeIn">Job Experience</h1>
+      </div>
+
+      <div class="row">
+          <div class="span6" style="float: none; margin: 0 auto;">
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/cwpjob.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">CWP MOOC Student Assistant</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">UC Berkeley College of Letters & Sciences</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">August 2019 - Present</h6>
+                    <p class="card-text"> Moderate online course through EdX platform, Perform data analytics using Python, Machine Learning Libraries, and analytics libraries (such as NumPy and Plotly) to analyze classes and improve online classes, Create and Maintain a HTML/javascript/CSS website, Handle course communications and troubleshooting, Create and maintain course content with HTML, Create promotional graphics.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/bmc.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Elementary Assistant</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Berkeley Math Circle</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">August 2019 - Present</h6>
+                    <p class="card-text"> Educate elementary-aged children in challenging mathematics, Prepare course material and class schedule, Attend after-school class sessions, and provide after-hours help.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/sfpuc.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">IT Services - Project Pull</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">San Francisco Public Utilities Commission</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">June 2019 - August 2019</h6>
+                    <p class="card-text">Worked with IT division to solve over 200 problems/tickets, Handled customer service and computer services, created scripts using PowerShell to increase efficiency on deployment, Fixed/Imaged computer hardware, Mentored high school youth to introduce them to work in the public sector.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/berklaw.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Student Assistant II</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Berkeley Law</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">August 2018 - September 2019</h6>
+                    <p class="card-text">Handled marketing, networking, and Global communications, Created graphics for conference and webpage, Maintained and revamped Wordpress website, Lead conference organization in anti-discrimination, Maintained record of numerous records and files.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/kumon.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Teaching Assistant II</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Kumon North America</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">March 2014 - June 2018</h6>
+                    <p class="card-text">Tutored in advanced math and reading, Evaluated student work, Planned student work schedule and set goals, Trained new hires, Handled front desk and administrative work, Assisted in data entry/file management.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/core.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Administrative Assistant</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Core HealthCare</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">July 2013 - August 2013</h6>
+                    <p class="card-text">Maintained mass file Management, worked on digitizing files, Handled confidential information, Completed administrative tasks on command and before deadlines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </section>
+  <hr class = "rainbowlong wow fadeIn">
+
+  <!-- leadership  -->
+  <section id="leadership">
+    <div class = "container-fluid justify-content-center">
+
+      <div class = "text-center">
+        <h1>Leadership 2020</h1>
+      </div>
+
+      <div class="row">
+          <div class="span6" style="float: none; margin: 0 auto;">
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/matlab.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Research</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Derrick Smith</h6>
+                    <p class="card-text">Research on the relationship between the human eye and 3D perspectives using linear algebra and MatLab.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/wim.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Treasurer</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Berkeley Womxn in Mathematics</h6>
+                    <p class="card-text">Created Sponsorship documents, Maintained sponsors for club, Created and hosted multiple fundraisers, Participated and helped host club events, Attend regular meetings, Handle photography.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/dss.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Member/Presenter</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Berkeley Data Science Society</h6>
+                    <p class="card-text">Completed a semester-long data science project, Created professional presentation at a data science emporium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/mfol.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Member</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">March For Our Lives</h6>
+                    <p class="card-text">Member from the original March for Our Lives Movement, Spoke at the rally, Created voting movements, Attended club events.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3 wow fadeIn" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/bmt.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Proctor/Event Coordinator</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Berkeley Mini Math Competition</h6>
+                    <p class="card-text">Proctored a Math Competition for middle school students, Created a Break-out room event for students, Graded contest exams.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+  </section>
+  <hr class = "rainbowlong wow fadeIn">
+
+  <!-- HardSkills  -->
+  <section id="hardskills">
+    <div class = "container-fluid">
+
+      <div class="graph-cont wow fadeIn">
+        <h1>Hard Skills</h1>
+        <div class="bar bar1">Java</div>
+        <div class="bar bar2">Python</div>
+        <div class="bar bar3">Microsoft Office</div>
+        <div class="bar bar4">Adobe CC</div>
+        <div class="bar bar5">HTML/JavaScript/CSS</div>
+        <div class="bar bar6">SQL</div>
+        <div class="bar bar7">PowerShell</div>
+      </div>
+
+    </div>
+  </section>
+  <hr class = "rainbowlong wow fadeIn">
+
+  <!-- Certificates and awards -->
+  <section id="certificates">
+    <div class = "container-fluid wow fadeIn">
+      <div class = "row">
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h1 class = "text-center">Awards</h1>
+          <ul>
+            <li class = "custombullet">Dean's List</li>
+              <ul><li class = "custombullet">Berkeley College of Letters and Sciences - 2019/2020</li></ul>
+            <li class = "custombullet">Presidential Volunteer Service Award</li>
+              <ul><li class = "custombullet">Gold Tier - 2018</li></ul>
+            <li class = "custombullet">Top 10%</li>
+              <ul><li class = "custombullet">Class of 2018 - Marjory Stoneman Douglas High</ul>
+            <li class = "custombullet">AP Scholar with Distinction</li>
+              <ul><li class = "custombullet">2018 - College Board</li></ul>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h1 class = "text-center">Certificates</h1>
+          <ul>
+            <li class = "custombullet">Microsoft Office Certified</li>
+            <li class = "custombullet">ServSafe Specializaed</li>
+            <li class = "custombullet">American Hotel and Lodging Association Certified</li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h1 class = "text-center">Languages</h1>
+          <ul>
+            <li class = "custombullet">English</li>
+            <li class = "custombullet">French</li>
+            <li class = "custombullet">Bengali</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <hr class = "rainbowlong wow fadeIn">
 
   <!-- Footer -->
-  <footer>
+  <footer class = "wow slideInUp">
     <div class="container-fluid padding">
       <div class = "row text-center">
         <div class = "col-md-6">
@@ -75,13 +396,13 @@
           <p>Sara Imam</p>
           <hr class  ="light">
           <div class = "footerlist">
-          <a href="https://www.linkedin.com/in/saraimam/">Linkedin</a>
+          <a href="https://www.linkedin.com/in/saraimam/" target="_blank">Linkedin</a>
           </div>
           <div class = "footerlist">
-          <a href="mailto:sara.imam@berkeley.edu">Email</a>
+          <a href="mailto:sara.imam@berkeley.edu" target="_blank">Email</a>
           </div>
           <div class = "footerlist">
-          <a href="https://twitter.com/_sara4change">Twitter</a>
+          <a href="https://twitter.com/_sara4change" target="_blank">Twitter</a>
           </div>
         </div>
 

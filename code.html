@@ -3,19 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <title>"Sara Imam | Home" </title>
+  <title>"Sara Imam | Code" </title>
   <meta name="author" content="Sara Imam">
   <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta name="description" content="A website for all things Sara Imam!">
   <meta name = "keywords" content = "Sara Imam, Software Engineer, Data Science, Berkeley, California, Design, Art, Internship, CS, UC Berkeley, UCB">
 
+
+  <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+  <!-- STYLE -->
   <script src="https://kit.fontawesome.com/d179e4a5e6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- ANIMATION -->
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/wow.min.js"></script>
+                <script>
+                new WOW().init();
+                </script>
 
 </head>
 
@@ -23,7 +33,7 @@
   <header>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black; color: white;">
+    <nav class="navbar navbar-expand-md navbar-dark wow slideInDown" style="background-color: black; color: white;">
       <div class = "container-fluid">
 
         <a class="navbar-brand" href="index.html">Sara Imam</a>
@@ -33,9 +43,9 @@
         </button>
         <div class = "collapse navbar-collapse" id = "navbarResponsive">
           <ul class = "navbar-nav">
-            <li class="nav-item active"> <a class = "nav-link" href="index.html">Home</a> </li>
+            <li class="nav-item"> <a class = "nav-link" href="index.html">Home</a> </li>
             <li class="nav-item"> <a class = "nav-link" href="about.html">About</a> </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a class = "nav-link dropdown-toggle" data-toggle = "dropdown" data-target="dropdown_target" href="#">Portfolio<span class = "caret"></span></a>
               <div class ="dropdown-menu" aria-labelledby ="dropdown_target">
                 <a class = "dropdown-item" href = "code.html">Code</a>
@@ -48,31 +58,32 @@
 
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+            <a class="nav-link contactmebuttons" href="https://www.linkedin.com/in/saraimam/" target="_blank" ><i class="fab fa-linkedin"></i></a>
           </li>
           <li class="nav-item" href="mailto:sara.imam@berkeley.edu" target="_blank">
-            <a class="nav-link"><i class="fas fa-envelope-square"></i></a>
+            <a class="nav-link contactmebuttons"><i class="fas fa-envelope-square"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a class="nav-link contactmebuttons"  href="https://twitter.com/_sara4change" target="_blank"><i class="fab fa-twitter-square"></i></a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- Header -->
-    <section id="codeheader">
+    <section id="codeheader" class = "wow fadeIn">
       <div class = "container-fluid text-center">
         <h1>&ltPORTFOLIO: CODE&gt</h1>
         <h3> My Projects in Java, Python, and HTML. </h3>
       </div>
     </section>
+    <hr class ="rainbowline wow fadeIn">
 
 
     <!-- Buttons -->
-    <div class="container-fluid">
+      <div class="container-fluid wow fadeIn" data-wow-delay = ".5s">
       <ul class="nav nav-pills center-pills" id = "pillbuttons">
-        <li class="active"><a data-toggle="pill" href="#all"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">ALL</button></a></li>
+        <li><a data-toggle="pill" href="#all"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">ALL</button></a></li>
         <li><a data-toggle="pill" href="#java"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">JAVA</button></a></li>
         <li><a data-toggle="pill" href="#python"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">PYTHON</button></a></li>
         <li><a data-toggle="pill" href="#html"><button type="button" class="btn btn-dark" style="background-color: black; color: white;">HTML/CSS/JAVASCRIPT</button></a></li>
@@ -188,7 +199,7 @@
 
             <div class = col-md-4>
               <div class = "card mb-4 box-shadow">
-                <img class = "card-img-top" src="./img/websiteopp.jpg" alt="maggies website">
+                <img class = "card-img-top" src="./img/websiteopp.png" alt="maggies website">
                 <div class = "card-body">
                   <h4>Berkeley Center on Comparative Equality & Anti-Discrimination Law Website </h4>
                   <a href="https://www.law.berkeley.edu/research/berkeley-center-on-comparative-equality-anti-discrimination-law/" target="_blank">Project Code</a>
@@ -475,7 +486,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class = "wow slideInUp">
       <div class="container-fluid padding">
         <div class = "row text-center">
           <div class = "col-md-6">
@@ -483,13 +494,13 @@
             <p>Sara Imam</p>
             <hr class  ="light">
             <div class = "footerlist">
-            <a href="https://www.linkedin.com/in/saraimam/">Linkedin</a>
+            <a href="https://www.linkedin.com/in/saraimam/" target="_blank">Linkedin</a>
             </div>
             <div class = "footerlist">
-            <a href="mailto:sara.imam@berkeley.edu">Email</a>
+            <a href="mailto:sara.imam@berkeley.edu" target="_blank">Email</a>
             </div>
             <div class = "footerlist">
-            <a href="https://twitter.com/_sara4change">Twitter</a>
+            <a href="https://twitter.com/_sara4change" target="_blank">Twitter</a>
             </div>
           </div>
 
